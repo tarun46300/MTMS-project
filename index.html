@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Theatre Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🎟️ CineVerse</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#new-movies">New Movies</a></li>
+      <li><a href="#ratings">IMDb Ratings</a></li>
+      <li><a href="#booking">Book Tickets</a></li>
+      <li><a href="#theatres">Nearby Theatres</a></li>
+      <li><a href="#showtimes">Showtimes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to CineVerse</h1>
+    <p>Book your movie tickets, check showtimes, and explore nearby theatres!</p>
+    <button onclick="scrollToSection('booking')">Book Now</button>
+  </section>
+
+  <!-- New Movies Section -->
+  <section id="new-movies" class="section">
+    <h2>🎬 New & Upcoming Movies</h2>
+    <div class="movie-grid" id="movieList">
+      <!-- Movies loaded dynamically -->
+    </div>
+  </section>
+
+  <!-- IMDb Ratings Section -->
+  <section id="ratings" class="section">
+    <h2>⭐ Top IMDb Rated Movies</h2>
+    <div class="movie-grid" id="ratingsList">
+      <!-- Top rated movies will load here -->
+    </div>
+  </section>
+
+  <!-- Ticket Booking Section -->
+  <section id="booking" class="section booking">
+    <h2>🎟️ Book Your Tickets</h2>
+    <form id="bookingForm">
+      <label for="theatre">Select Theatre:</label>
+      <select id="theatre"></select>
+
+      <label for="movie">Select Movie:</label>
+      <select id="movie"></select>
+
+      <label for="showtime">Showtime:</label>
+      <select id="showtime"></select>
+
+      <label for="seats">Number of Seats:</label>
+      <input type="number" id="seats" min="1" max="10" required />
+
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="bookingMsg"></p>
+  </section>
+
+  <!-- Nearby Theatres -->
+  <section id="theatres" class="section">
+    <h2>🏢 Nearby Theatres</h2>
+    <div id="theatreList" class="theatre-grid">
+      <!-- Theatre info loaded dynamically -->
+    </div>
+  </section>
+
+  <!-- Showtimes -->
+  <section id="showtimes" class="section">
+    <h2>🕒 Showtimes</h2>
+    <table id="showtimeTable">
+      <thead>
+        <tr>
+          <th>Movie</th>
+          <th>Theatre</th>
+          <th>Screen</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Showtimes dynamically filled -->
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 CineVerse | Designed by Tarun Sharma</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

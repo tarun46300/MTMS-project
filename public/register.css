@@ -1,0 +1,55 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c") no-repeat center center/cover;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 350px;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 1rem;
+  color: #ffcc00;
+}
+
+input {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
